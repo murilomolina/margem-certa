@@ -1,0 +1,22 @@
+{
+  "version": "2026-10-01",
+  "source": "Shopee, Central de Educação do Vendedor — Política de Comissão para vendedores CNPJ e CPF (atualizada em 01/10/2026)",
+  "notes": "Comissão incide só sobre o preço do item (sem frete) e já inclui a taxa de transação. Subsídio Pix não altera o valor recebido pelo vendedor.",
+  "bands": [
+    { "min": 0,      "max": 79.99,  "pct": 0.20, "fixed": 4.50 },
+    { "min": 80,     "max": 99.99,  "pct": 0.14, "fixed": 16.00 },
+    { "min": 100,    "max": 199.99, "pct": 0.14, "fixed": 20.00 },
+    { "min": 200,    "max": null,   "pct": 0.14, "fixed": 26.00 }
+  ],
+  "lowPrice": {
+    "cnpjBelow": 9.00,
+    "cpfBelow": 12.00,
+    "rule": "half-price",
+    "cpfRuleIsEstimate": true
+  },
+  "cpfHighVolume": {
+    "ordersThreshold": 450,
+    "windowDays": 90,
+    "extraPerItem": 3.00
+  }
+}
